@@ -32,15 +32,16 @@
       });
     </script>
     <script>
-    function loadScriptOnUserAction() {
-      const script = document.createElement("script");
-      script.src = "https://assets.adobedtm.com/38e40b98b9df/b47210d3face/launch-9d237833654e-development.min.js";
-      script.async = true;
-      document.head.appendChild(script);
-    }
-  
-    window.addEventListener("click", loadScriptOnUserClick, { once: true });
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          const script = document.createElement("script");
+          script.src = "https://assets.adobedtm.com/38e40b98b9df/b47210d3face/launch-9d237833654e-development.min.js";
+          script.async = true;
+          document.head.appendChild(script);
+        }, 3000); // Delay in milliseconds (e.g., 3000ms = 3 seconds)
+      });
     </script>
+
   </head>
   <body>
     <h1>Welcome To The Demo Site!</h1>
