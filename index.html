@@ -14,22 +14,26 @@
               pageURL:window.location.href 
           } 
       }); 
-      window.adobeDataLayer = window.adobeDataLayer || [] 
-      adobeDataLayer.push({ 
-          event: "pageview1", 
-          page: { 
-              pageName1: "homepage1",
-              pageURL1:window.location.href 
-          } 
-      });
-      window.adobeDataLayer = window.adobeDataLayer || [] 
-      adobeDataLayer.push({ 
-          event: "pageview2", 
-          page: { 
-              pageName2: "homepage2",
-              pageURL2:window.location.href 
-          } 
-      });
+      setTimeout(function () {
+        window.adobeDataLayer = window.adobeDataLayer || [] 
+        adobeDataLayer.push({ 
+            event: "pageview1", 
+            page: { 
+                pageName1: "homepage1",
+                pageURL1:window.location.href 
+            } 
+        });
+      }, 2000);
+      setTimeout(function () {
+        window.adobeDataLayer = window.adobeDataLayer || [] 
+        adobeDataLayer.push({ 
+            event: "pageview2", 
+            page: { 
+                pageName2: "homepage2",
+                pageURL2:window.location.href 
+            } 
+        });
+      }, 2000);
     </script>
     <script>
       window.addEventListener("load", function () {
