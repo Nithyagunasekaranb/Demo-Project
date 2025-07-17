@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Animated Countdown</title>
+    <script>
+      window.adobeDataLayer = window.adobeDataLayer || [] 
+      adobeDataLayer.push({ 
+          event: "pageview", 
+          page: { 
+              pageName: "homepage",
+              pageURL:window.location.href 
+          } 
+      }); 
+      window.adobeDataLayer = window.adobeDataLayer || [] 
+      adobeDataLayer.push({ 
+          event: "pageview1", 
+          page: { 
+              pageName1: "homepage1",
+              pageURL1:window.location.href 
+          } 
+      });
+      window.adobeDataLayer = window.adobeDataLayer || [] 
+      adobeDataLayer.push({ 
+          event: "pageview2", 
+          page: { 
+              pageName2: "homepage2",
+              pageURL2:window.location.href 
+          } 
+      });
+    </script>
+    <script>
+    function loadScriptOnUserAction() {
+      const script = document.createElement("script");
+      script.src = "https://assets.adobedtm.com/38e40b98b9df/b47210d3face/launch-9d237833654e-development.min.js";
+      script.async = true;
+      document.head.appendChild(script);
+    }
+  
+    window.addEventListener("click", loadScriptOnUserClick, { once: true });
+    </script>
   </head>
   <body>
     <h1>Welcome To The Demo Site!</h1>
