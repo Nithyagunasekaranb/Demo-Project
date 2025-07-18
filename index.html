@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Animated Countdown</title>
+    <script src="https://assets.adobedtm.com/b648e6ddae5b/8547a8d50388/launch-82a324f6c733-development.min.js" async></script>
     <script>
       window.adobeDataLayer = window.adobeDataLayer || [] 
       adobeDataLayer.push({ 
@@ -14,7 +15,7 @@
               pageURL:window.location.href 
           } 
       }); 
-      setTimeout(function () {
+      //setTimeout(function () {
         window.adobeDataLayer = window.adobeDataLayer || [] 
         adobeDataLayer.push({ 
             event: "pageview1", 
@@ -23,8 +24,8 @@
                 pageURL1:window.location.href 
             } 
         });
-      }, 2000);
-      setTimeout(function () {
+      //}, 2000);
+     // setTimeout(function () {
         window.adobeDataLayer = window.adobeDataLayer || [] 
         adobeDataLayer.push({ 
             event: "pageview2", 
@@ -33,17 +34,17 @@
                 pageURL2:window.location.href 
             } 
         });
-      }, 2000);
+     // }, 2000);
     </script>
     <script>
-      window.addEventListener("load", function () {
+    /*  window.addEventListener("load", function () {
         setTimeout(function () {
           const script = document.createElement("script");
           script.src = "https://assets.adobedtm.com/38e40b98b9df/b47210d3face/launch-9d237833654e-development.min.js";
           script.async = true;
           document.head.appendChild(script);
         }, 8000); // Delay in milliseconds (e.g., 3000ms = 3 seconds)
-      });
+      });*/
     </script>
 
   </head>
