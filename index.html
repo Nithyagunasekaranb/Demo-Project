@@ -7,7 +7,7 @@
     <title>Animated Countdown</title>
     <script src="https://assets.adobedtm.com/38e40b98b9df/b47210d3face/launch-9d237833654e-development.min.js" async></script>
     <script>
-      window.adobeDataLayer = window.adobeDataLayer || [] 
+    /*  window.adobeDataLayer = window.adobeDataLayer || [] 
       adobeDataLayer.push({ 
           event: "pageview", 
           page: { 
@@ -35,6 +35,18 @@
             } 
         });
      // }, 2000);
+     */
+
+       window.adobeDataLayer = window.adobeDataLayer || [];
+        for (let i = 1; i <= 10; i++) {
+          adobeDataLayer.push({
+            event: 'pageview${i}',
+            page: {
+              pageName: 'pageName${i}',
+              timestamp: new Date().toISOString(); // optional: useful for debugging
+            }
+          });
+        }
     </script>
     <script>
     /*  window.addEventListener("load", function () {
