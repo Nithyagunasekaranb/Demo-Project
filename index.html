@@ -40,9 +40,9 @@
        window.adobeDataLayer = window.adobeDataLayer || [];
         for (let i = 1; i <= 10; i++) {
           adobeDataLayer.push({
-            event: 'pageview${i}',
+            event: 'pageview'+i,
             page: {
-              pageName: 'pageName${i}',
+              pageName: 'pageName'+i,
               timestamp: new Date().toISOString() // optional: useful for debugging
             }
           });
